@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema | person</title>
+</head>
+<body>
+    <script>
+        //Skjemaet skal inneholde følgende felter: navn, e-post, passord, fødselsdato, telefonnummer, kjønn, land, avhuking for personvern, og en send-knapp.
+    </script>
+    <section>
+        <h2>Registrer deg her</h2>
+        <form>
+            <label for="navn">
+                Navn:
+                <input type="text" name="navn" placeholder="Annika Bekkevold Pfeifer..." id="navn" maxlength="30" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+            </label>
+            <label>
+                Alder:
+                <input type="number" name="Alder" placeholder="19" min="18" max="99" required>
+            </label>
+            <label>
+                E-post:
+                <input type="email" name="email" placeholder="eksempel@mail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            </label>
+            <label>
+                Passord:
+                <input type="password" name="passord" placeholder="Skriv passord her" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </label>
+            <label>
+                Fødselsdato:
+                <input type="date" max="2023-12-31" required>
+            </label>
+            <label>
+                Telefonnummer:
+                <input type="tel" placeholder="+47..." pattern="[0-9]{8,12}" required>
+            </label>
+                <label>
+                    Mann
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                     Kvinne
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="valg">
+                </label>
+            <label>
+                Nasjoalitet:
+                <select name="nasjonalitet" required>
+                    <option value="">Norge</option>
+                    <option value="">Sverige</option>
+                    <option value="">Danmark</option>
+                    <option value="">Finland</option>
+                    <option value="">Russland</option>
+                    <option value="">Spania</option>
+                    <option value="">Italia</option>
+                    <option value="">Tyrkia</option>
+                </select>
+            </label>
+            <h3>Samtykker du til lagring av data?</h3>
+            <label>
+                Nei
+                <input type="radio" name="valg">
+            </label>
+            <label>
+                 Ja
+                <input type="radio" name="valg">
+            </label>
+            <label>
+                <input type="submit" value="send">
+            </label>
+        </form>
+    </section>
+
+    <footer>
+        <p>Annika Bekkevold Pfeifer 2024</p>
+    </footer>
+</body>
+</html>

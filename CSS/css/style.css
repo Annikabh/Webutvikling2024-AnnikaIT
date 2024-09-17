@@ -1,0 +1,26 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0px;
+}
+h1 {
+    color:brown;
+    font-size: 60px;
+    background-color: antiquewhite;
+    padding: 2rem;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+a.btn{
+    background-color: bisque;
+    color: rgb(24, 107, 26);
+    padding: 2rem;
+    display: inline-block;
+    margin: 10px 0px;
+}

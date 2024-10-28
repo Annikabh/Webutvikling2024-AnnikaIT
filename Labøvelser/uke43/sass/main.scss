@@ -1,0 +1,6 @@
+//Henter inn de ulike sass filene slik at alt samles sammen i denne hovedfilen.
+
+@use 'variables.scss';
+@use 'mixins.scss';
+@use 'base.scss';
+
